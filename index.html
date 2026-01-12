@@ -1,12 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Учебно Сайто</title>
+    <title>Котики-программисты | Главная</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Это статико учебно сайто</h1>
-    <p>Тут будето информация</p>
+    <header>
+        <div class="logo">
+            <i class="fas fa-cat"></i>
+            <h1>Котики-программисты</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Мяу-мяу код!</h2>
+                <p>Мы пишем код, ловим баги и спим на клавиатуре. Профессиональные программисты с усами и хвостами!</p>
+                <button class="cta-button" id="magic-button">Нажми для магии!</button>
+            </div>
+            <div class="hero-image">
+                <div class="cat-image" id="cat-animation"></div>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Наши супер-способности</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Код на JavaScript</h3>
+                    <p>Пишем чистый код, пока вы гладите наши пушистые животики</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Ловим баги</h3>
+                    <p>Охотимся на баги лучше, чем на настоящих мух!</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3>Спим на работе</h3>
+                    <p>Мастерство сна на клавиатуре - наша специализация</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <h2>Мяу-отзывы</h2>
+            <div class="testimonial-content">
+                <div class="quote-mark">"</div>
+                <p id="testimonial-text">Эти котики написали код, который не только работает, но и мурлычет!</p>
+                <div class="quote-mark">"</div>
+            </div>
+            <button class="next-testimonial" id="next-testimonial">Следующий отзыв</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Котики-программисты. Все права защищены. Мяу!</p>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-vk"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <div class="floating-cats">
+        <div class="floating-cat">🐱</div>
+        <div class="floating-cat">🐈</div>
+        <div class="floating-cat">😺</div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

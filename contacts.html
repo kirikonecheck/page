@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Котики-программисты | Контакты</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-cat"></i>
+            <h1>Котики-программисты</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html" class="active">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacts-page">
+        <section class="contacts-hero">
+            <h2>Свяжитесь с нами!</h2>
+            <p>Мы всегда рады новым проектам, предложениям и, конечно, поглаживаниям за ушком</p>
+        </section>
+
+        <div class="contacts-container">
+            <section class="contact-form-section">
+                <h3>Напишите нам сообщение</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" placeholder="Например, Степан" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Ваш email</label>
+                        <input type="email" id="email" placeholder="example@mail.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" rows="5" placeholder="Опишите ваш проект или просто скажите 'мяу'..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="cat-name">Имя вашего кота (если есть)</label>
+                        <input type="text" id="cat-name" placeholder="Необязательно, но приветствуется">
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Отправить сообщение <i class="fas fa-paper-plane"></i></button>
+                </form>
+                
+                <div class="form-message" id="form-message"></div>
+            </section>
+
+            <section class="contact-info">
+                <h3>Наши контакты</h3>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>meow@catcoders.ru</p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Телефон</h4>
+                        <p>+7 (800) МЯУ-КОД</p>
+                        <p class="contact-note">Звоните с 10:00 до 18:00, кроме времени сна и еды</p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Адрес</h4>
+                        <p>ул. Кошачья, д. 15, офис "Мяу"</p>
+                        <p>г. Котовск, Россия</p>
+                    </div>
+                </div>
+                
+                <div class="contact-method">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Часы работы</h4>
+                        <p>Пн-Пт: 10:00 - 18:00</p>
+                        <p>Сб-Вс: Спим/Кодим по настроению</p>
+                    </div>
+                </div>
+                
+                <div class="social-contacts">
+                    <h4>Мы в соцсетях</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-vk"></i>
+                            <span>VK</span>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-telegram"></i>
+                            <span>Telegram</span>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="map-section">
+            <h3>Где нас найти</h3>
+            <div class="fun-map">
+                <div class="map-placeholder">
+                    <div class="map-cat" id="map-cat">😸</div>
+                    <div class="map-pointer"></div>
+                    <p>Мы здесь! Рядом с миской с едой и когтеточкой</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Котики-программисты. Все права защищены. Мяу!</p>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-vk"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <div class="floating-cats">
+        <div class="floating-cat">🐱</div>
+        <div class="floating-cat">🐈</div>
+        <div class="floating-cat">😺</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
